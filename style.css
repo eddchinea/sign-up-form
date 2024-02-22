@@ -7,3 +7,84 @@ html {
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: rgb(29, 34, 34);
+}
+
+.main-container {
+    display: flex;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration-container {
+    flex: 1;
+    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+}
+
+.logo-container {
+    background-color: #0000009c;
+    display: flex;
+    padding: 1rem;
+    margin: auto 0;
+}
+
+.logo{
+    max-height: 100px;
+    margin: auto;
+}
+
+.credits {
+    margin-top: auto;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-container {
+    background-color: #eee;
+    flex: 2;
+    display: flex;
+}
+
+.form-section {
+    padding: 1rem 2rem;
+    flex: 2;
+}
+
+.form-section:first-child {
+    justify-content: end;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-section:last-child {
+    margin-top: 1rem;
+    gap: 1rem;
+    align-items: start;
+}
+
+
+.input-section {
+    flex: 1;
+    background-color: #fff;
+}
+
+.input-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 450px;
+}
+
+li {
+    list-style: none;
+    flex: 1;
+}
