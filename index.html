@@ -29,27 +29,27 @@
                     <ul>
                         <li>
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'\- ]{1,50}$" required>
                         </li>
                         <li>
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ'\- ]{1,50}$" required>
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </li>
                         <li>
                             <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="phone-number" id="phone-number">
+                            <input type="tel" name="phone-number" id="phone-number" pattern="\d{3}[\s]\d{3}[\s]\d{4}" required title="Must be in the format: 123 456 7890. US only">
                         </li>
                         <li>
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="The password must contain an UpperCase letter, a LowerCase letter, a Number/SpecialCharacter and min 8 Characters long">
                         </li>
                         <li>
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
+                            <input type="password" name="confirm-password" id="confirm-password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must match with your password">
                         </li>
                     </ul>
                 </div>
