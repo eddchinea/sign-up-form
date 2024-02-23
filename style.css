@@ -110,6 +110,7 @@ body {
 .input-section {
     flex: 1;
     background-color: #fff;
+    box-shadow: 0 10px 10px -10px #0000003d;
 }
 
 .input-section h1 {
@@ -135,6 +136,7 @@ li label {
     text-transform: uppercase;
     color: #000000af;
     letter-spacing: 1px;
+    margin-bottom: 1px;
 }
 
 .form-section button {
@@ -147,8 +149,44 @@ li label {
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: bold;
+    box-shadow: 0 5px 5px -2px #0000003d;
 }
+
+.form-section button:hover {
+    background-color: #4a5f3f;
+}
+
 
 .log-in-link {
     color: #596D48;
 }
+
+.log-in-link:hover {
+    color: #4a5f3f;
+}
+
+input {
+    padding: 0.2rem;
+    border: 1px solid #0000003d;
+    border-radius: 5px;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus-visible {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 5px 5px 10px -4px #0000003d;
+    transition: all 0.2s ease-in-out;
+}
+
+input:hover {
+    background-color: #f3f3f3;
+}
+
