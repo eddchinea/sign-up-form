@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
 </head>
 <body>
     <div class="main-container">
@@ -50,6 +51,7 @@
                         <li>
                             <label for="confirm-password">Confirm Password</label>
                             <input type="password" name="confirm-password" id="confirm-password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must match with your password">
+                            <span class="message"></span>
                         </li>
                     </ul>
                 </div>

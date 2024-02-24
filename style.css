@@ -190,3 +190,8 @@ input:hover {
     background-color: #f3f3f3;
 }
 
+.message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
